@@ -16,6 +16,12 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Tower Square Photo 12x18.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="apG-cW-o2j">
+                                <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
+                                <variation key="widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="250" y="155" width="80" height="80"/>
+                                </variation>
+                            </imageView>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter Name" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ayh-ze-u9t">
                                 <rect key="frame" x="0.0" y="-30" width="97" height="30"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
@@ -56,30 +62,35 @@
                                     <rect key="frame" x="16" y="86" width="314" height="61"/>
                                 </variation>
                             </label>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Tower Square Photo 12x18.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="apG-cW-o2j">
-                                <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
+                            <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vJb-PI-ZAx">
+                                <rect key="frame" x="0.0" y="-21" width="42" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
                                 <variation key="widthClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="250" y="155" width="80" height="80"/>
+                                    <rect key="frame" x="16" y="155" width="226" height="42"/>
                                 </variation>
-                            </imageView>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <variation key="default">
                             <mask key="subviews">
+                                <exclude reference="apG-cW-o2j"/>
                                 <exclude reference="ayh-ze-u9t"/>
                                 <exclude reference="3rT-6A-6ty"/>
                                 <exclude reference="Mpd-bc-ELO"/>
                                 <exclude reference="ywJ-qP-NGz"/>
-                                <exclude reference="apG-cW-o2j"/>
+                                <exclude reference="vJb-PI-ZAx"/>
                             </mask>
                         </variation>
                         <variation key="widthClass=compact">
                             <mask key="subviews">
+                                <include reference="apG-cW-o2j"/>
                                 <include reference="ayh-ze-u9t"/>
                                 <include reference="3rT-6A-6ty"/>
                                 <include reference="Mpd-bc-ELO"/>
                                 <include reference="ywJ-qP-NGz"/>
-                                <include reference="apG-cW-o2j"/>
+                                <include reference="vJb-PI-ZAx"/>
                             </mask>
                         </variation>
                     </view>
@@ -88,6 +99,7 @@
                         <outlet property="enterNameTextField" destination="ayh-ze-u9t" id="NzV-PS-L4n"/>
                         <outlet property="mailButton" destination="Mpd-bc-ELO" id="rtS-Av-u6Y"/>
                         <outlet property="messageLabel" destination="ywJ-qP-NGz" id="jfv-K3-dM0"/>
+                        <outlet property="nameLabel" destination="vJb-PI-ZAx" id="wch-xe-pKH"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
